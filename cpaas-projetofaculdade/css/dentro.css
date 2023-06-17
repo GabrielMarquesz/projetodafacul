@@ -1,0 +1,256 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-image: var(--img-fundo-pc);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height:100%;
+    color: var(--cor-texto);
+}
+
+:root{    
+    --switch-bg-url: url(../assets/moon-stars.svg);
+    --switch-bg-url: url(../assets/sun.svg);
+    --img-fundo-pc: url(../assets/FUNDO-PC.png);
+    --cor-texto: white;
+    --img-fundo-celular: url(../assets/FUNDO_CELULAR.png);
+}
+
+
+/*TEMA CLARO E ESCURO*/
+    
+.dark {
+    --switch-bg-url: url(../assets/moon-stars.svg);
+    --cor-texto: rgb(255, 255, 255);
+    --img-fundo-pc:url(../assets/fundoazulescuro.jpg);
+    --img-fundo-celular: url(../assets/fundoazulescuro);
+
+
+}
+    
+#switch{
+    display: block;
+    width: 64px;
+    height: 28px;
+    background: var(--preto);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 100px;
+  }
+
+  #switch {
+    position: relative;
+    width: 80px;
+  }
+
+  #switch button {
+    width: 30px;
+    height: 32px;
+    background: rgb(255, 253, 253) var(--switch-bg-url) no-repeat center;
+    border: 0;
+    z-index: 2;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;  
+    
+  }
+
+  .dark #switch button {
+    animation: slide-in 0.2s forwards;
+  }
+
+  #switch span {
+    display: block;
+  
+  }
+
+  @keyframes slide-in {
+    from {
+      left: 0;
+    }
+    to {
+      left: 50%;
+    }
+  }
+  
+  @keyframes slide-back {
+    from {
+      left: 50%;
+    }
+    to {
+      left: 0;
+    }
+  }
+  
+  
+
+/*para telas grandes*/
+
+
+.topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    gap:7rem;
+
+   
+}
+#logo{
+    height:2rem;
+    opacity: 0.7;
+}
+
+
+main{
+    padding-top: 1rem;
+}
+
+.serviços-cpaas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 2.3rem;
+    
+}
+p{
+    color: var(--color-text);
+    font-size: 25px;
+    color: var(--cor-texto);
+    font-family:'Quicksand', sans-serif;
+}
+
+#sair{
+    background-color: rgb(0, 35, 100);
+    color:White;
+    padding: 10px;
+    border:2px solid rgba(255, 255, 255, 0.493);
+}
+li{
+    color: var(--cor-texto);
+
+
+}
+h3{
+    color: var(--cor-texto);
+
+}
+
+#icon{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    background-color: rgb(28, 118, 183);
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid rgba(127, 127, 255, 0.573);
+    
+}
+.link{
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.658);
+    border-radius: 5px;
+    text-align: center;
+    width: 8rem;
+    box-shadow: 1px 1px rgb(255, 255, 255);
+}
+.link:hover{
+    background: rgb(255, 255, 255);
+}
+a:hover{
+    background: rgba(255, 255, 255, 0.411);
+    border-top: 1px solid rgb(255, 254, 204);
+}
+
+/*sub menu*/
+
+#paragrafo{
+    font-size: 12px;
+    font-weight: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.sub-menu p{
+    color: rgba(240, 248, 255, 0);
+}
+.sub-menu p:hover{
+    color: var(--cor-texto);
+}
+
+.caixas-servicos{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estilização para o link */
+
+.link {
+    color: rgb(25, 0, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* Estilização para o texto oculto */
+.texto-oculto {
+    display: none;
+}
+
+
+@media screen and (max-width:600px) {
+body{
+    height:280vh;
+}
+main{
+    padding: 20px;
+    margin-left: 5px;
+}
+.serviços-cpaas{
+    flex-direction: column;
+    display: block;
+    padding-bottom: 10px; 
+     
+}
+
+#paragrafo{
+    font-size: 14px;
+}
+
+h1{
+    margin-left: 3px;
+    font-size: 20px;
+    margin-top: 4rem;
+
+    margin-bottom: 3rem;
+}
+
+p{
+    font-size: 1.5rem;
+    font-weight:0.5px ;
+}
+a{
+    padding: 5px;
+}
+#logo{
+    height:1.5rem;
+}
+
+#switch {
+    width: 60px;
+    height:20px;
+}
+}

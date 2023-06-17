@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+:root{
+  --texto-branco: white;
+  --fundo-body:url(../img/pessoas.jpg);
+  --fundo-formulario:rgba(0, 0, 0, 0.397);
+  --cor-botao: rgba(0, 0, 0, 0.76);
+  --cor-borda: rgba(0, 0, 133, 0.863);
+}
+
+body{
+  background-image: var(--fundo-body);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+}
+
+h1{
+  color:white;
+}
+.principal{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items:center;
+  padding: 0.5rem;
+}
+.container{
+  display:flex;
+  justify-content:center;
+  background:#2d2d2dbd;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 40rem;
+
+}
+a{
+  font-size: 1rem;
+  padding-left:1rem;
+}
+label{
+  color: white;
+  font-size: 15px;
+}
+.botao-do-campo-senha{ 
+  display:flex;
+  flex-direction: column;
+}
+/*
+.card{
+  width: 300px;
+  justify-content:center;
+  align-items:center;
+}*/
+.label-float input{
+  width: 28rem;
+  padding: 2px 2px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+  
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #4038a0;
+}
+
+.label-float label{
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 12px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0
+}
+
+.campos-todos{
+ display:flex;
+ font-size: 13px;
+}
+
+button{
+  background-color: transparent;
+  border-color: #f5f5f5;
+  color: #000000;
+  padding: 4px;
+  width: 50%;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  background-color: #ffffff88;
+  color: #fff;
+}
+
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+a{
+  color:white;
+}
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #0d009c;
+}
+
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#msgSuccess{
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+#endereco{
+  height: 1.5rem;
+  border-radius:6px;
+  border: none;
+  background: #b3b0b0b2;
+
+}
+#cep{
+  height: 1.5rem;
+  border-radius:6px;
+  background: #b3b0b0b2;
+  border: none;
+}
+#labelCep{
+  margin-left: 3rem;
+}
+
+#nascimento{
+  height: 1.5rem;
+  border-radius:6px;
+  border: none;
+  background: #b3b0b0b2;
+  margin: 1rem;
+
+
+
+}
+#sexo{
+  height: 1.5rem;
+  border-radius:6px;
+  border: none;
+  margin: 1rem;
+  background: #b3b0b0b2;
+  margin: 1rem;
+
+
+}
+#telefone{
+  height: 1.5rem;
+  border-radius:6px;
+  border: none;
+  background: #b3b0b0b2;
+
+}
+#labelConfirmTelefone{
+  margin-left: 2rem;
+}
+
+#celular{
+  height: 1.5rem;
+  border-radius:6px;
+  border: none;
+  background: #b3b0b0b2;
+
+
+}
+
+@media screen and (min-width:100px) and (max-width:600px) {
+  .principal{
+    flex-direction: column-reverse;
+    margin:2rem;
+
+  }
+  .container{
+    display:flex;
+    justify-content:center;
+    background:#2d2d2dbd;
+    height: 45rem;
+  
+  }
+  .label-float input{
+    width:20rem;
+  }
+  
+  body{
+    height: 260vh;
+  }
+
+  img{
+    height: 13rem;
+    width: 20rem;
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/cadastro.css">
+  <title>Document</title>
+</head>
+  
+  <body>
+  <main class="principal">
+  <div class='container'>
+    <div class='card'>
+      <h1> Cadastrar </h1>
+      
+      <div id='msgError'></div>
+      <div id='msgSuccess'></div>
+               <div class="label-float">
+                  <input type="text" id="nome" placeholder="seu nome completo" required>
+                  <label id="labelNome" for="nome">Nome:</label>
+               </div>
+             
+              <div class="label-float">
+               <input type="text" id="nomeMaterno" placeholder="digite o sobrenome da sua mãe." required>
+               <label id="labelNomeMaterno" for="nomeMaterno">Nome Materno:</label>
+              </div>
+             
+              <div class="label-float">
+               <input type="password" id="senha" placeholder=" " required>
+               <label id="labelSenha" for="senha">Senha:</label>
+               <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+               <input type="password" id="confirmSenha" placeholder=" " required>
+               <label id="labelConfirmSenha" for="confirmSenha">Confirmar Senha:</label>
+               <i id="verConfirmSenha" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+               <input type="cpf" id="cpf" placeholder=" " required onkeypress="$(this).mask('000.000.000-00');" onclick="compareCpf()">
+               <label id="labelCpf" for="cpf">CPF:</label>
+            </div>
+
+            <div class="label-float">
+               <input type="text" id="login" placeholder="Use letras e números!" required>
+               <label id="labelLogin" for="login">Login:</label>
+            </div>
+
+            <div class="campos-todos">
+              <div>
+               <label id="labelConfirmNascimento" for="nascimento">Data de nascimento:</label>
+               <input type="date" id="nascimento" name="nascimento" class="inputs required" required>
+              </div>
+              
+              <div>
+               <label for="sexo">Sexo:</label> 
+               <select id="sexo" name="sexo" required>
+                     <option value="">Selecione</option>
+                     <option value="masculino">Masculino</option>
+                     <option value="feminino">Feminino</option>
+                     <option value="outro">Outro</option>
+               </select>
+              </div>
+            </div>
+            
+            <div class="campos-todos">
+               <div>
+                  <label id="labelConfirmEndereco" for="endereco">Endereço:</label>
+                  <input type="text" id="endereco" name="endereco" class="inputs required">
+               </div>
+               <br>
+               <div>
+                  <label id="labelCep" for="cep">CEP:</label>
+                  <input type="cep" id="cep" name="cep" onkeypress="$(this).mask('00.000-000')" class="inputs required">
+               </div>
+           </div>
+           <br>
+           <div class="campos-todos">
+            <div>
+               <label id="labelConfirmCelular" for="celular">Celular:</label>
+               <input type="tel" id="celular" class="inputs required" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+            <div>
+                <label id="labelConfirmTelefone" for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" class="inputs required" placeholder="(xx) xxxx-xxxx" required>                  
+            </div>
+         </div>
+
+            <div class='justify-center'>
+                 <button onclick='cadastrar()' id="botao-cadastrar">Cadastrar</button>
+              </div>     
+              
+              <div class="links">
+               <a href="login.html">Entrar</a><a href="../index.html">voltar</a>
+               </div>
+           </div>
+  </div>
+
+            
+           
+           <div class="cpaas">
+
+               
+              <img src="../img/logooficial.png" alt="">
+       
+           </div>
+         </main>
+      
+    
+    <script src="../js/cadastro.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+  </html>

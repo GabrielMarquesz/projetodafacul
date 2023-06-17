@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/dentro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <script src="../js/script.js"></script>
+    <title>Cpaas</title>
+</head>
+<body>
+
+    <header class="topo">
+        
+        <img src="../img/logo-semfundo.png" alt="logo" id="logo">
+        </div>
+
+        <nav class="icone-pesquisa">
+            
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                 <span></span>
+               </div>
+            <div>
+        </nav>
+
+
+    </header>
+    <br><br>
+   
+    <button onclick= "sair()" id="sair">SAIR</button>
+
+    <script>
+    if(localStorage.getItem('token') == null) {
+      alert('Voce precisa estar logado para acessar')
+      window.location.href = 'login.html'
+    }
+    function sair() {
+
+      localStorage.removeItem('token')
+      window.location.href = 'login.html'
+
+    }
+    </script>
+
+    <main>
+        <h1>TRABALHAMOS<br>COM:</h1>
+
+        <div class="serviços-cpaas">
+        
+            <div class="caixas-servicos">
+         
+            <a href="2fa.html">
+                <ion-icon name="lock-open" id="icon"></ion-icon>
+                <p>IDENTIFICAÇÃO</p>
+                <P><strong>POR DUAS ETAPAS<BR>(2FA)</strong></P>
+                
+                <a id="link-texto" class="link" onclick="alternarTexto()">
+                    ver informações
+    
+                </a>
+            </a>   
+            <br>
+            <div id="texto-oculto" class="texto-oculto">
+            
+                    <p id="paragrafo">
+                        
+                    
+                         <h3>2FA permite que você:</h3>
+                        <li>Envie uma senha via SMS,<br> voz ou e-mail<br>
+                         para autenticação do usuário.<br>
+                        </li>
+        
+                        <li>
+                         Adicione uma camada extra<br> de segurança<br>
+                         além da senha pessoal.<br></li>
+                        <li>Ofereça maior segurança<br> para usuários.<br></li>
+                    </p>
+            </div>            
+            </div>
+    
+            <br>
+
+            <div class="caixas-servicos">
+
+            <a href="verificachamada.html">
+                <ion-icon name="checkmark-outline" id="icon"></ion-icon>
+                <p>VERIFICAÇÃO</p>
+                 <P><strong>DE CHAMADAS <br> DO GOOGLE</strong></P>
+
+                 <a id="link-texto1" class="link" onclick="alternarTexto1()">
+                    ver informações
+    
+                </a>
+            </a>
+
+            <div id="texto-oculto1" class="texto-oculto">
+                    
+                    <p id="paragrafo">
+                        • Aviso de problemas de fraude<br>
+                         de cartão de crédito.<br>
+                        • Aviso de atrasos e cancelamentos<br>
+                         de voos.<br>
+                        • Agendamentos de serviços, entregas,<br>
+                         reparos e instalações.<br>
+                        • Avisos sobre agendamentos, exames<br>
+                         e resultados.<br>
+                        • Oferecer uma melhor experiência <br>
+                        de vendas e promoções.<br>
+                    </p>
+                        
+                 
+            </div>   
+            </div>
+            
+            <br>
+
+
+
+            <div class="caixas-servicos">
+
+            <a href="num-mascara.html">
+                <ion-icon name="phone-portrait-outline" id="icon"></ion-icon>
+                <p>NÚMERO</p>
+                <P><strong>MASCARA</strong></P>
+
+                <a id="link-texto2" class="link" onclick="alternarTexto2()">
+                    ver informações
+    
+                </a>
+            
+            </a>
+
+            <div id="texto-oculto2" class="texto-oculto">
+                    
+                    <p id="paragrafo">
+                        Conecte-se com seus clientes.<br>
+                        É muito provável que você já<br>
+                        tenha recebido uma mensagem <br>
+                        de texto de uma empresa ou<br>
+                        organização.<br>
+                         Com uma API, qualquer empresa<br>
+                         pode enviar mensagens de texto<br>
+                         e impactar clientes, prospects<br>
+                        ou fornecedores como parte seu<br>
+                        processo comercial.<br>
+                        Com essa ferramenta você envia<br>
+                        mensagens de SMS com as informações<br>
+                        que o seu cliente precisa e com a<br>
+                        segurança, a velocidade e a confiabilidade<br>
+                         que você espera.<br>
+                    </p>
+                        
+            </div>   
+            </div>
+
+            <br>
+
+
+            <div class="caixas-servicos">
+
+            <a href="sms.html">
+                <ion-icon name="chatbubble-ellipses-outline" id="icon"></ion-icon>
+                <p>SMS</p>
+                <P><strong>PROGRAMAVEL</strong></P>
+
+                <a id="link-texto3" class="link" onclick="alternarTexto3()">
+                    ver informações
+    
+                </a>
+            
+            </a>
+             
+            <div id="texto-oculto3" class="texto-oculto">
+                <p id="paragrafo">Two-Factor Authentication <br>
+                    Autenticação de dois fatore</p>
+                    
+                    <p id="paragrafo">
+                        Conecte-se com seus clientes.<br>
+                        É muito provável que você <br> 
+                        tenha recebido uma mensagem<br>
+                        de texto de uma empresa ou <br>
+                        organização.<br>
+                        Com uma API, qualquer empresa<br>
+                        pode enviar mensagens de texto<br>
+                        e impactar clientes, prospects<br>
+                        ou fornecedores como parte de<br>
+                        seu processo comercial.<br>
+                        Com essa ferramenta você envia<br>
+                        mensagens de SMS com as informações<br>
+                        que o seu cliente precisa e com a<br>
+                        segurança, a velocidade e a<br>
+                        confiabilidade que você
+                        espera.
+                                             
+                        
+                    </p>
+            </div>   
+            </div>
+            
+        </div>
+
+
+    </main>
+    
+    <script>
+		/* Função para alternar a exibição do primeiro serviço*/
+		function alternarTexto() {
+			var linkTexto = document.getElementById("link-texto");
+			var textoOculto = document.getElementById("texto-oculto");
+
+			if (textoOculto.style.display === "none") {
+				textoOculto.style.display = "block";
+				linkTexto.textContent = "Ocultar texto";
+			} else {
+				textoOculto.style.display = "none";
+				linkTexto.textContent = "ver informações";
+			}
+		}
+        /*segundo serviço*/
+        function alternarTexto1() {
+			var linkTexto = document.getElementById("link-texto1");
+			var textoOculto = document.getElementById("texto-oculto1");
+
+			if (textoOculto.style.display === "none") {
+				textoOculto.style.display = "block";
+				linkTexto.textContent = "Ocultar texto";
+			} else {
+				textoOculto.style.display = "none";
+				linkTexto.textContent = "ver informações";
+			}
+		}
+        /*terceiro serviço*/
+        function alternarTexto2() {
+			var linkTexto = document.getElementById("link-texto2");
+			var textoOculto = document.getElementById("texto-oculto2");
+
+			if (textoOculto.style.display === "none") {
+				textoOculto.style.display = "block";
+				linkTexto.textContent = "Ocultar texto";
+			} else {
+				textoOculto.style.display = "none";
+				linkTexto.textContent = "ver informações";
+			}
+		}
+
+        /*quarto serviço*/
+        function alternarTexto3() {
+			var linkTexto = document.getElementById("link-texto3");
+			var textoOculto = document.getElementById("texto-oculto3");
+
+			if (textoOculto.style.display === "none") {
+				textoOculto.style.display = "block";
+				linkTexto.textContent = "Ocultar texto";
+			} else {
+				textoOculto.style.display = "none";
+				linkTexto.textContent = "ver informações";
+			}
+		}
+	</script>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

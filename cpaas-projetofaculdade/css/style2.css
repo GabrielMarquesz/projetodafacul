@@ -1,0 +1,130 @@
+:root{
+    --color-white: #4d4d4d5b;
+    --color-red: #ff0000;
+    --color-dark1: #ffffff;
+    --color-dark2: rgba(0, 0, 0, 0.63);
+    --color-purple1: #058f94;
+    --color-purple2: rgb(0, 83, 83);
+    --color-white:rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-image: url(../img/pessoas.jpg);
+    background-size: cover;
+    background-repeat: no-repeat ;
+}
+.principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content{
+    display: flex;
+    justify-content: left;
+    background-color: var(--color-dark2);
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: auto;
+    width:24rem;
+}
+
+h3{
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+
+h2{
+    font-size: 3rem;
+    color: rgb(27, 22, 22);
+}
+strong{
+    color: var(--color-white);
+}
+.content form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+
+.span-required{
+    font-size: 14px;
+    margin: 3px 0 0 1px;
+    color: var(--color-red);
+    display: none;
+
+}
+
+.inputs{
+    padding: 4px 5px;
+    /*outline: none;*/
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.767);
+    color: rgb(131, 48, 0);
+    width: 19rem;
+    transition: .3s;
+    display: flex;
+
+}
+
+.inputs:focus{
+    border-color: var(--color-purple1);
+}
+
+.box-select{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    gap: 1rem;
+}
+
+button[type="submit"]{
+    padding: 1rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: var(--color-purple2);
+    color: var(--color-dark1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+button[type="submit"]:hover{
+    background-color: var(--color-purple1);
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+a{
+    color: white;
+
+}
+@media screen and (max-width: 576px) {
+   body{
+    height: 120vh;
+   }
+
+   .content{
+    justify-content: center;
+   }
+
+    .principal{
+        flex-direction: column-reverse;
+    }
+}

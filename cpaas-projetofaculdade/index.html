@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CpaaS-Telecall</title>
+</head>
+<body>
+    <header class="cabecalho">
+
+        <div class="header" id="header">
+    
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </button>
+            <div id="switch" onclick="toggleMode()">
+                <button></button>
+                <span></span>
+            </div>
+
+            <div class="gnav">
+                <a href="html/login.html">Fazer login</a>
+                <BR>
+                <a href="html/cadastro.html">Cadastrar-se</a>
+                <Br>
+                <a href="#fale-conosco">Fale conosco</a>
+            </div>
+
+            <div class="logo_header">
+            
+                <img src="img/logo-semfundo.png" alt="Logo" class="img_logo_header">
+            </div>
+
+            <div class="navigation_header" id="navigation_header">
+
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+                <img src="img/logooficial.png" alt="" height="200px">
+                <a href="html/login.html">Fazer login</a>
+                <a href="html/cadastro.html">Cadastrar-se</a>
+
+            </div>
+
+        </div>
+   
+        <div class="texto-imagem">
+           
+            <div class="frases">
+                <img src="img/logooficial.png" alt="" id="cartao">
+            </div>
+
+            <div class="imagens-topo">
+                <div>
+                    <img src="img/OIP.jpg" alt="" id="pessoas-img-2"> 
+                </div>
+
+                <div>
+                    <img src="img/pessoas.jpg" alt="" id="pessoas-img">
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="conteudo-principal">
+
+       <section class="imagem-texto">
+        
+            <div class="texto">
+                <b>Quem somos?</b>
+                <p> 
+                A Telecall é uma operadora de telecomunicações brasileira que oferece a seus clientes o mais 
+                alto padrão de qualidade, velocidade e acessibilidade em soluções de comunicação.
+                </p>
+                <p>
+                Serviços que incluem uma ampla gama de valores agregados, oferecendo aos clientes 
+                operações mais produtivas, inovadoras e eficazes. Com mais de 20 anos de experiência 
+                na indústria global, a Telecall hoje é sinônimo de qualidade e eficiência.
+                </p>  
+            </div>
+
+            <div class="contato-final" id="fale-conosco">
+                <div>
+                <p> 
+                   Escritório<br><br>
+       
+                   Brasil<br><br>
+                   
+                   Email: suporte@telecall.com<br><br>
+                   
+                   Tel: (21) 3030-1010<br><br>
+                   
+                   Wpp: (21)93618-0100<br><br>
+        
+                </p>
+                </div>
+                <div class="redes-sociais">
+                    <a>
+                        <ion-icon name="logo-instagram" id="icones"></ion-icon>
+                    </a>
+                    
+                    <a>
+                        <ion-icon name="logo-linkedin" id="icones"></ion-icon>
+                    </a>
+                    <a>
+                        <ion-icon name="logo-facebook" id="icones"></ion-icon>
+                    </a>
+                    <a>
+                        <ion-icon name="logo-whatsapp" id="icones"></ion-icon>
+                    </a>
+                 </div>
+            </div>
+
+        </section>   
+    </main>
+
+  
+
+ <script src="./js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!--TEMA CLARO E ESCURO-->
+  <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+</body>
+</html>

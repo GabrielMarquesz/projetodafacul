@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+  
+  <body>
+  <main class="partes-principais">
+      <div>
+          <img src="../img/logooficial.png" alt="imagem" height="250px">
+      </div>
+  <div class='container'>
+    <div class='formulario'>
+      <a href="../index.html">voltar</a>
+      <h1> Entrar </h1>
+      
+      <div id='msgError'></div>
+      
+      <div class='label-float'>
+        <label id='userLabel' for='usuario'>Usuario</label>
+
+        <input type='text' id='usuario' required>
+      </div>
+      
+      <div class='label-float'>
+        <label id='senhaLabel' for='senha'>Senha</label> <br>
+        <input type='password' id='senha' required>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </div>
+      
+      <div class='justify-center'>
+        <button onclick='entrar()'>Entrar</button>
+      </div>
+      
+      <div class='justify-center'>
+        <hr>
+      </div>
+      
+      <p> Não tem uma conta?
+        <a href='cadastro.html'> Cadastre-se </a>
+      </p>
+      
+    </div>
+    </div>
+  </main>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

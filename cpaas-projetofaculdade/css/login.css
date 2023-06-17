@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --texto-branco: white;
+  --fundo-body:url(../img/pessoas.jpg);
+  --fundo-formulario:rgba(0, 0, 0, 0.397);
+  --cor-botao: rgba(0, 0, 0, 0.76);
+  --cor-borda: rgba(0, 0, 133, 0.863);
+}
+
+body{
+  background-image: var(--fundo-body);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 100vh;
+}
+
+h1{
+  font-size: 4rem;
+  color:var(--texto-branco);
+}
+
+#link-voltar{
+  font-size: 20px;
+  width: 75px;
+  border-radius: 8px;
+}
+
+b{
+  color:var(--texto-branco);
+  font-size: 16px;
+}
+a{
+  color:white;
+  text-decoration: none;
+
+}
+.partes-principais{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items:center;
+   margin-top:2rem; 
+
+}
+
+.container{
+  gap: 3rem;
+  background-color: var(--fundo-formulario);
+  width:30rem;
+  height:40rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.formulario{
+  gap:2rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding: 5rem;
+
+
+}
+
+
+/*
+.campos{
+  padding: 60px;
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+}*/
+
+button{
+  height:50px;
+  width: 300px;
+  background-color: var(--cor-botao);
+  color:var(--texto-branco);
+}
+
+.imagem-login img{
+  width: 25rem;
+  height: 28rem;
+  border-radius: 50%;
+}
+
+input#usuario{
+  height:3rem;
+  width: 300px;
+  background-color:#ffffff1a;
+  color:white;
+  font-size:18px;
+
+
+}
+input#senha{
+  height:3rem;
+  width: 300px;
+  background-color:#ffffff1a;
+  color:white;
+  font-size:18px;
+
+
+}
+
+label{
+  color:white;
+  font-size:26px;
+}
+
+@media screen and (max-width:600px) {
+
+  body{
+    height: 200vh;
+  }
+  .partes-principais {
+      display: flex;
+      flex-direction: column;
+  }
+  img{
+      width: 16rem;
+      height: 15rem;
+  }
+  
+  h1{
+    font-size: 1.5rem;
+  }
+  .container{
+    width: 22rem;
+    height: 41rem;
+    padding: none;
+    
+  }
+  .formulario {
+    gap: 2rem;
+   padding:1rem; 
+}
+
+  
+  /*
+  
+  input#usuario{
+    width: 260px;
+  }
+  input#senha{
+    width: 260px;
+  }
+  button{
+    width: 260px;
+
+  }*/
+}
+
+/*parte do js*/
+
+/*
+.label-float input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #272262;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+
+}
+/*
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #4038a0;
+}*/
+/*s
+.label-float label{
+  color: #272262;
+  pointer-event: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0
+}*/
+
+
+.fa-eye{
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #272262;
+}
+
+ #msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+/**********/
+

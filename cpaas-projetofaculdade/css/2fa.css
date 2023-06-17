@@ -1,0 +1,150 @@
+*{    
+    text-decoration: none;
+    border:0;
+    margin:0;
+    box-sizing: border-box;
+    }
+      
+    
+    body{
+        height: 100vh;
+        font-family:Arial, Helvetica, sans-serif;
+     }
+    
+    nav{
+       display:flex;
+       background-color:#005acf;
+       align-items: center;
+       justify-content: space-around;
+       height:8rem;
+    }
+   
+    nav ul{
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        
+
+     }
+    
+    
+    nav a{
+        font-size: 20px;
+        font-weight: 500;;
+        color: rgb(255, 255, 255);
+        padding: 1rem;
+        text-align:center;
+        border: 1px solid white;
+     }
+    
+      
+    a:hover{
+      color: rgb(0, 89, 255);
+    }
+    
+    img{
+     height:2rem;
+    }
+    .reta{
+       color:rgb(131, 77, 77);
+       background: #FFF2E7;
+       padding: 15px;
+    }
+    strong{
+        font-size: 1.2rem;
+    }
+    
+    .texto-introducao{
+        font-size: 1.2rem;
+        padding:10px;
+    }
+
+    h1{
+        border-top: 4px solid rgb(0, 81, 255);
+        width: 25rem;
+        font-size: 1.5rem;
+        color:rgb(0, 0, 0);
+    }
+    p{
+        font-size: 1rem;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.589);
+        width: 50rem;
+    }
+    #doisfa{
+        background:red;
+        height:1.5rem;
+        margin:3rem;
+        padding: 5px;
+        color:white;
+    }
+
+    .formulario-de-2fa{
+        background-color: rgba(0, 140, 255, 0.489);
+        padding: 3rem;
+        width:20rem;
+        display: flex;
+        flex-direction: column;
+        gap:1rem;
+
+        
+    }
+
+    input{
+        width: 15rem;
+    }
+    button{
+        background:rgba(0, 8, 255, 0.892);
+        height:1.5rem;
+        color:white;
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    b{
+        font-size: 25px;
+    }
+    input{
+        height:30px;
+    }
+
+    .container{
+        display: flex;
+    }
+  
+
+
+@media screen and (max-width:700px) {
+
+img{
+    height: 1.4rem;
+}
+.cabecalho-menu1{
+    padding: 0.5rem;
+    margin: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+}
+
+.formulario-de-2fa {
+    padding: 0.4rem;
+    width: 16rem;
+}
+h1 {
+    border-top: 4px solid rgb(0, 81, 255);
+    width: 15rem;
+     font-size: 1.5rem; 
+    /* color: rgb(0, 0, 0); */
+}
+p{
+    width: 15rem;
+}
+.texto-introducao{
+    width: 15rem;
+
+}
+}
