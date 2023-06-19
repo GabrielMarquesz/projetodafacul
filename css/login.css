@@ -63,11 +63,7 @@ a{
   flex-direction:column;
   justify-content:center;
   padding: 5rem;
-
-
 }
-
-
 /*
 .campos{
   padding: 60px;
@@ -89,7 +85,7 @@ button{
   border-radius: 50%;
 }
 
-input#usuario{
+input#login{
   height:3rem;
   width: 300px;
   background-color:#ffffff1a;
@@ -104,8 +100,6 @@ input#senha{
   background-color:#ffffff1a;
   color:white;
   font-size:18px;
-
-
 }
 
 label{

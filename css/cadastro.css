@@ -38,7 +38,8 @@ h1{
   background:#2d2d2dbd;
   padding-left: 2rem;
   padding-right: 2rem;
-  height: 40rem;
+  height: 45rem;
+  width: 38rem;
 
 }
 a{
@@ -48,6 +49,9 @@ a{
 label{
   color: white;
   font-size: 15px;
+}
+.row{
+  display:flex;
 }
 .botao-do-campo-senha{ 
   display:flex;
@@ -200,7 +204,8 @@ a{
   height: 1.5rem;
   border-radius:6px;
   border: none;
-  background: #b3b0b0b2;
+  background: #dbdbdbc1;
+  color: black;
 
 }
 #labelConfirmTelefone{
@@ -211,7 +216,8 @@ a{
   height: 1.5rem;
   border-radius:6px;
   border: none;
-  background: #b3b0b0b2;
+  background: #b3b0b0f1;
+  color: black;
 
 
 }
